@@ -145,7 +145,7 @@ a{
     opacity: 0;
     transition-property: opacity;
     transition-duration: var(--normal-duration);
-    transition-timing-function: var(--normal-duration);
+    transition-timing-function: var(--normal-timing-function);
 }
 
 .header-nav:hover::after,
