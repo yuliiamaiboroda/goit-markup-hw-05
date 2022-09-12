@@ -195,6 +195,15 @@ a{
     font-size: 16px;
     line-height: 1.88;
     cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: var(--normal-duration);
+    transition-timing-function: var(--normal-timing-function);
+}
+
+.main-background-button:hover,
+.main-background-button:focus{
+    background-color: #188CE8;
 }
 
 .advances-title {
