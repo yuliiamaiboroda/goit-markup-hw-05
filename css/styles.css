@@ -817,10 +817,11 @@ input{
 
 }
 
-.subsribe-form-inputs{
+.subsribe-form{
     display: flex;
     gap: 12px;
 }
+
 
 .title-callback{
     display: block;
@@ -831,6 +832,7 @@ input{
     text-align: center;
     letter-spacing: 0.03em;
 }
+
 .callback-label{
     display: block;
     font-size: 12px;
@@ -846,8 +848,8 @@ input{
 
 .callback-icon{
     position: absolute;
-    bottom: 14px;
-    left: 15px;
+    bottom: 11px;
+    left: 12px;
 }
 
 .callback-field{
