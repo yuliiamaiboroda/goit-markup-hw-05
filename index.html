@@ -422,15 +422,97 @@
             </ul>
           </div>
         </div>
+        <div class="subscribe">
+          <h3 class="subscribe-title">Підпишіться на розсилку</h3>
+          <form class="subsribe-form">
+            <div class="subsribe-form-inputs">
+              <label>
+                <input
+                  type="email"
+                  class="input-subscribe-mail"
+                  name="subscribe-mail"
+                  required
+                  placeholder="E-mail"
+              /></label>
+              <button class="subcribe-btn" type="submit">
+                Підписатися
+                <svg class="icon-send-subscribe" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send-subscribe"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
-          <svg class="close-modal" height="11" width="11">
+          <svg class="close-modal" height="18" width="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <form class="callback">
+          <strong class="title-callback">Залиште свої дані, ми вам передзвонимо</strong>
+          <div class="form-group" role="group">
+            <label class="form-callback">
+              <span class="callback-label">Ім'я</span>
+              <input
+                type="text"
+                class="callback-field"
+                name="user-name"
+                required
+                minlength="2"
+                maxlength="20"
+              />
+              <svg class="callback-icon" height="12" width="12">
+                <use href="./images/icons.svg#icon-person-form"></use>
+              </svg>
+            </label>
+            <label class="form-callback">
+              <span class="callback-label">Телефон</span>
+              <input
+                type="tel"
+                class="callback-field"
+                required
+                name="user-phone"
+                minlength="10"
+                maxlength="13"
+              />
+              <svg class="callback-icon" height="13" width="13">
+                <use href="./images/icons.svg#icon-phone-form"></use>
+              </svg>
+            </label>
+            <label class="form-callback">
+              <span class="callback-label">Пошта</span>
+              <input type="email" class="callback-field" required name="user-mail" />
+              <svg class="callback-icon" height="12" width="15">
+                <use href="./images/icons.svg#icon-mail-form"></use>
+              </svg>
+            </label>
+            <label class="form-callback">
+              <span class="callback-label">Коментар</span>
+              <textarea
+                class="form-message"
+                name="user-message"
+                rows="5"
+                placeholder="Введіть текст"
+              ></textarea>
+            </label>
+          </div>
+          <label class="privacy-agreement">
+            <input type="checkbox" class="privacy-checkbox" name="agree" />
+            <svg class="agreement-icons" height="16" width="16">
+              <use class="agreement-icon-uncheck" href="./images/icons.svg#icon-uncheck-form"></use>
+              <use class="agreement-icon-check" href="./images/icons.svg#icon-check-form"></use>
+            </svg>
+            <span class="privacy-agreement-text"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="" class="privacy-agreement-link">Умови договору</a></span
+            >
+          </label>
+          <button class="form-btn" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
